@@ -606,3 +606,113 @@ CSS Stylesheet for Clínica de Operación
         align-items: center;
     }
 }
+
+/* ============================= */
+/* HEADER RESPONSIVE FIX */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .header-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+}
+
+/* ============================= */
+/* SERVICES MOBILE FIX */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .services-section {
+        padding: 60px 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+        text-align: left;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+
+}
+
+/* ============================= */
+/* ABOUT MOBILE FIX */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image {
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 280px;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* ============================= */
+/* RESOURCES MOBILE FIX */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .resources-section {
+        padding: 60px 20px;
+    }
+
+    .resources-wrapper {
+        text-align: left;
+    }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .resource-card {
+        padding: 25px 20px;
+    }
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
