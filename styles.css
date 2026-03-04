@@ -41,34 +41,110 @@ a {
     --text-muted: #555;
 }
 
-/* ===================================== */
-/* HEADER */
-/* ===================================== */
+/* =========================
+   RESET BÁSICO HEADER
+========================= */
 
 header {
     width: 100%;
-    padding: 20px;
-    background: white;
-    border-bottom: 1px solid #eee;
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.header-wrapper {
+/* =========================
+   NAV DESKTOP
+========================= */
+
+nav {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 12px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-nav ul {
+/* =========================
+   LOGO
+========================= */
+
+.logo-boutique {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-initials {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo-text {
+    font-size: 0.7rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+/* =========================
+   NAV LINKS DESKTOP
+========================= */
+
+.nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 28px;
 }
 
-nav a {
-    color: var(--primary);
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.9rem;
     font-weight: 500;
+    color: #222;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #a67c52;
+}
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 16px;
+    }
+
+    .logo-boutique {
+        margin-bottom: 8px;
+    }
+
+    .logo-initials {
+        font-size: 1.2rem;
+    }
+
+    .logo-text {
+        font-size: 0.65rem;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
 }
 
 /* ===================================== */
