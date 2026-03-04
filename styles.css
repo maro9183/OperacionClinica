@@ -42,7 +42,7 @@ a {
 }
 
 /* =========================
-   HEADER COMPACTO REAL
+   HEADER
 ========================= */
 
 header {
@@ -62,8 +62,6 @@ nav {
     justify-content: space-between;
 }
 
-/* LOGO */
-
 .logo-boutique {
     display: flex;
     align-items: center;
@@ -79,8 +77,6 @@ nav {
     font-size: 0.65rem;
     line-height: 1.1;
 }
-
-/* LINKS DESKTOP */
 
 .nav-links {
     list-style: none;
@@ -98,35 +94,17 @@ nav {
     color: #fff;
 }
 
-@media (max-width: 768px) {
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 12px 16px;
-    }
-
-    .logo-boutique {
-        margin-bottom: 6px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 8px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .nav-links a {
-        font-size: 0.85rem;
-    }
-}
-/* ===================================== */
-/* HERO */
-/* ===================================== */
+/* =========================
+   HERO
+========================= */
 
 .hero {
-    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
     background: linear-gradient(135deg, var(--primary), var(--primary-light));
     color: white;
     text-align: center;
@@ -161,6 +139,24 @@ nav {
     transform: translateY(-2px);
 }
 
+
+/* =========================
+   MOBILE NAV FIX
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none; /* ocultamos el menú en mobile */
+    }
+
+}
 /* ===================================== */
 /* SECTION GENERIC */
 /* ===================================== */
